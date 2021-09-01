@@ -1,4 +1,5 @@
-"use strict";
+"use strict"
+
 
 let mainSlider = new Swiper('.main-slider__body', {
 	autoplay: {
@@ -81,7 +82,7 @@ let angleButton = 0;
 document.querySelector('.quotes__button').addEventListener('click', function () {
 	angleButton += 360;
 	this.style.transition = 400;
-	this.style.transform = 'rotate(' + angleButton + 'deg)';
+	this.style.transform = `rotate(${angleButton}deg)`;
 });
 
 function email_test(input) {
@@ -202,11 +203,10 @@ if (!!isMobile.any()) {
       if (e.target != menuContainer) {
          submenuClose();
       }
-      for (let i = 0; i < userSubmenuItems.length; i++) {
-         const submenuItem = userSubmenuItems[i];
-         noFocusedClick(e, submenuItem);
+      for (const submenuItem of userSubmenuItems) {
+         noFocusedClick(e, submenuItem)
       }
-      noFocusedClick(e, userSubmenuButton);
+      noFocusedClick(e, userSubmenuButton)
    });
 
    userSubmenu.addEventListener('keydown', function (e) {
@@ -229,7 +229,7 @@ if (!!isMobile.any()) {
    });
 
 
-   function submenuPagingDown () {
+   function submenuPagingDown() {
       if (indexCurentFocus === (userSubmenuItems.length - 1)) {
          indexNextFocus = 0;
       } else if (indexCurentFocus !== null) {
@@ -239,7 +239,7 @@ if (!!isMobile.any()) {
       indexCurentFocus = indexNextFocus;
    }
 
-   function submenuPagingUp () {
+   function submenuPagingUp() {
       if (!indexCurentFocus) {
          indexNextFocus = (userSubmenuItems.length - 1);
       } else if (indexCurentFocus) {
@@ -250,13 +250,13 @@ if (!!isMobile.any()) {
    }
 }
 
-function submenuClose () {
+function submenuClose() {
    if (userSubmenu.classList.contains('_active')) {
       userSubmenu.classList.remove('_active');
    }
 }
 
-function noFocusedClick (e, elem) {
+function noFocusedClick(e, elem) {
    if (e.target === elem) {
       elem.blur();
    }
@@ -287,12 +287,12 @@ if (moveItems.length) {
       adressMovedNodes[i] = {
          'parent': moveItem.parentElement,
          'position': indexNode(moveItem),
-      };
+      }
    }
 }
 
-function indexNode (node) {
-   let index = 0;
+function indexNode(node) {
+   let index = 0
    while (node.previousElementSibling) {
       node = node.previousElementSibling;
       index++;
@@ -300,12 +300,12 @@ function indexNode (node) {
    return index;
 }
 
-function dynamicAdaptive () {
+function dynamicAdaptive() {
    let screenWidth = window.outerWidth;
 
    if (moveItems.length) {
       for (let i = 0; i < moveItems.length; i++) {
-         const moveItem = moveItems[i];
+         const moveItem = moveItems[i]
 
          const dataMoveValue = moveItem.dataset.move.split(',');
          const parentClass = '.' + dataMoveValue[0];
@@ -318,7 +318,7 @@ function dynamicAdaptive () {
                var container = document.createElement(tag);
                let parentNode = document.querySelector(parentClass);
 
-               moveItem.classList.add('js-moved_' + breakPoint);
+               moveItem.classList.add('js-moved_' + breakPoint)
                container.classList.add(`_moved-node`);
                container.append(moveItem);
 
@@ -340,12 +340,11 @@ function dynamicAdaptive () {
 }
 dynamicAdaptive();
 
-function backMove (breakPoint) {
+function backMove(breakPoint) {
    const movedNodes = document.querySelectorAll('.js-moved_' + breakPoint);
 
    if (movedNodes.length) {
-      for (let i = 0; i < movedNodes.length; i++) {
-         const movedNode = movedNodes[i];
+      for (const movedNode of movedNodes) {
          const dataIndex = movedNode.getAttribute('data-move-index');
          const adressMovedNode = adressMovedNodes[dataIndex];
          const parentNode = adressMovedNode.parent;
@@ -354,7 +353,7 @@ function backMove (breakPoint) {
          movedNode.parentElement.remove();
 
          if (position == 0) {
-            parentNode.prepend(movedNode);
+            parentNode.prepend(movedNode)
          } else {
             parentNode.children[position - 1].after(movedNode);
          }

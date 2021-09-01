@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 
 @@include('files/sliders.js', {})
 @@include('files/form.js', {})

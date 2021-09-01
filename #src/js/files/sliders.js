@@ -1,3 +1,4 @@
+
 let mainSlider = new Swiper('.main-slider__body', {
 	autoplay: {
 		delay: 5000,
@@ -79,5 +80,5 @@ let angleButton = 0;
 document.querySelector('.quotes__button').addEventListener('click', function () {
 	angleButton += 360;
 	this.style.transition = 400;
-	this.style.transform = 'rotate(' + angleButton + 'deg)';
+	this.style.transform = `rotate(${angleButton}deg)`;
 });
