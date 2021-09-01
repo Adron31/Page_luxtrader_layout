@@ -6,15 +6,12 @@ let mainSlider = new Swiper('.main-slider__body', {
 		delay: 5000,
 		disableOnInteraction: false,
 	},
-
 	observer: true,
-	// observeParents: true,
 	slidesPerView: 1,
 	spaceBetween: 0,
 	autoHeight: false,
 	speed: 800,
 	loop: true,
-	// Arrows
 	navigation: {
 		nextEl: '.control-main-slider__arrow.control-main-slider__arrow_next',
 		prevEl: '.control-main-slider__arrow.control-main-slider__arrow_prev',
@@ -23,8 +20,6 @@ let mainSlider = new Swiper('.main-slider__body', {
 
 //slider lot
 let sliderLot = new Swiper('.slider-lots__items', {
-
-	observer: false,
 	slidesPerView: 3,
 	spaceBetween: 90,
 	autoHeight: false,

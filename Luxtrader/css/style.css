@@ -819,9 +819,6 @@ button:focus {
   width: 100vw;
 }
 
-.no-webp .main-slider__slide{
-  background-image: url("../img/bg.jpg"); }
-
 .main-slider__slide {
   padding-top: 60px;
   padding-bottom: 50px;
@@ -830,10 +827,12 @@ button:focus {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: url("../img/bg.jpg");
 }
 
-.no-webp .main-slider__slide:nth-child(2){
-  background-image: url("../img/bg-2.jpg"); }
+.main-slider__slide:nth-child(2) {
+  background-image: url("../img/bg-2.jpg");
+}
 
 .main-slider__header {
   margin-bottom: 20px;
@@ -1434,64 +1433,73 @@ button:focus {
   background: url("../img/icons/catalog/pattern-catalog.svg") center/contain no-repeat;
 }
 
-.no-webp .categories-lots__link_watch{
-  background-image: url("../img/categories/watch.jpg"); }
+.categories-lots__link_watch {
+  background-image: url("../img/categories/watch.jpg");
+}
 
 .categories-lots__link_watch span::before {
   background-image: url("../img/icons/catalog/watch.svg");
 }
 
-.no-webp .categories-lots__link_jewelery{
-  background-image: url("../img/categories/jewelery.jpg"); }
+.categories-lots__link_jewelery {
+  background-image: url("../img/categories/jewelery.jpg");
+}
 
 .categories-lots__link_jewelery span::before {
   background-image: url("../img/icons/catalog/jewelery.svg");
 }
 
-.no-webp .categories-lots__link_transport{
-  background-image: url("../img/categories/ship.jpg"); }
+.categories-lots__link_transport {
+  background-image: url("../img/categories/ship.jpg");
+}
 
 .categories-lots__link_transport span::before {
   background-image: url("../img/icons/catalog/car.svg");
 }
 
-.no-webp .categories-lots__link_accessories{
-  background-image: url("../img/categories/accessories.jpg"); }
+.categories-lots__link_accessories {
+  background-image: url("../img/categories/accessories.jpg");
+}
 
 .categories-lots__link_accessories span::before {
   background-image: url("../img/icons/catalog/accessories.svg");
 }
 
-.no-webp .categories-lots__link_real-estate{
-  background-image: url("../img/categories/estate.jpg"); }
+.categories-lots__link_real-estate {
+  background-image: url("../img/categories/estate.jpg");
+}
 
 .categories-lots__link_real-estate span::before {
   background-image: url("../img/icons/catalog/estate.svg");
 }
 
-.no-webp .categories-lots__link_hi-tech{
-  background-image: url("../img/categories/hi-tech.jpg"); }
+.categories-lots__link_hi-tech {
+  background-image: url("../img/categories/hi-tech.jpg");
+}
 
 .categories-lots__link_hi-tech span::before {
   background-image: url("../img/icons/catalog/hi-tech.svg");
 }
 
-.no-webp .categories-lots__link_clothes{
-  background-image: url("../img/categories/clothes.jpg"); }
+.categories-lots__link_clothes {
+  background-image: url("../img/categories/clothes.jpg");
+}
 
 .categories-lots__link_clothes span::before {
   background-image: url("../img/icons/catalog/clothes.svg");
 }
 
-.no-webp .categories-lots__link_art{
-  background-image: url("../img/categories/art.jpg"); }
+.categories-lots__link_art {
+  background-image: url("../img/categories/art.jpg");
+}
 
 .categories-lots__link_art span::before {
   background-image: url("../img/icons/catalog/art.svg");
 }
 
-.no-webp .categories-lots__link_food{
-  background-image: url("../img/categories/food.jpg"); }
+.categories-lots__link_food {
+  background-image: url("../img/categories/food.jpg");
+}
 
 .categories-lots__link_food span::before {
   background-image: url("../img/icons/catalog/food.svg");
@@ -2827,24 +2835,24 @@ button:focus {
   }
 }
 
-.main-slider__slide{ background-image: url(../img/bg.webp); }
+.webp .main-slider__slide{ background-image: url(../img/bg.webp); }
 
-.main-slider__slide:nth-child(2){ background-image: url(../img/bg-2.webp); }
+.webp .main-slider__slide:nth-child(2){ background-image: url(../img/bg-2.webp); }
 
-.categories-lots__link_watch{ background-image: url(../img/categories/watch.webp); }
+.webp .categories-lots__link_watch{ background-image: url(../img/categories/watch.webp); }
 
-.categories-lots__link_jewelery{ background-image: url(../img/categories/jewelery.webp); }
+.webp .categories-lots__link_jewelery{ background-image: url(../img/categories/jewelery.webp); }
 
-.categories-lots__link_transport{ background-image: url(../img/categories/ship.webp); }
+.webp .categories-lots__link_transport{ background-image: url(../img/categories/ship.webp); }
 
-.categories-lots__link_accessories{ background-image: url(../img/categories/accessories.webp); }
+.webp .categories-lots__link_accessories{ background-image: url(../img/categories/accessories.webp); }
 
-.categories-lots__link_real-estate{ background-image: url(../img/categories/estate.webp); }
+.webp .categories-lots__link_real-estate{ background-image: url(../img/categories/estate.webp); }
 
-.categories-lots__link_hi-tech{ background-image: url(../img/categories/hi-tech.webp); }
+.webp .categories-lots__link_hi-tech{ background-image: url(../img/categories/hi-tech.webp); }
 
-.categories-lots__link_clothes{ background-image: url(../img/categories/clothes.webp); }
+.webp .categories-lots__link_clothes{ background-image: url(../img/categories/clothes.webp); }
 
-.categories-lots__link_art{ background-image: url(../img/categories/art.webp); }
+.webp .categories-lots__link_art{ background-image: url(../img/categories/art.webp); }
 
-.categories-lots__link_food{ background-image: url(../img/categories/food.webp); }
+.webp .categories-lots__link_food{ background-image: url(../img/categories/food.webp); }
