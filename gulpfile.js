@@ -142,7 +142,6 @@ function js () {
       .pipe(fileInclude())
       .pipe(dest(path.build.js));
    return src(path.src.js)       // метод получения исходных файлов по заданному пути
-      .pipe(plumber())
       .pipe(sourcemaps.init())
       .pipe(fileInclude())       // собирает файлы js в один
       .pipe(dest(path.build.js)) // выгружает обычный файл js
